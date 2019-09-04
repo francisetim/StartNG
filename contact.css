@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#nav {
+    width: 18em;
+    float: left;
+    position: fixed;
+    top: 0em;
+    height: 100%;
+    background-color: #04024f;
+}
+
+#nav>ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 3em;
+    padding-right: 0.9em;
+    color: white;
+}
+
+#right-column {
+    margin-left: 18em;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 1em; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+/* Style inputs with type="email" */
+input[type=email] {
+    width: 100%; /* Full width */
+    padding: 1em; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04024f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #ff9a03;
+    color: #04024f;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    background-color: rgb(248, 246, 246);
+  }
+
+.container-header {
+    padding: 3em;
+}
+
+.container-form {
+    padding: 1em 8em 8em 8em;
+}
+
+textarea {
+    height: 10em;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #04024f;
+    margin: 1em;
+}
+#footer {
+    width: 100%;
+    background-color: #04024f;
+    color: white;
+    line-height: 5em;
+    text-align: center;
+}
+
+.padding-header {
+    padding: 3em;
+}
+
+.padding {
+    padding: 25px 100px 50px 100px;
+}
+
+.bg-color {
+    background-color: rgb(248, 246, 246);
+}
+
+a:link, a:visited {
+    color: white;
+    padding: 0.8em 0.8em;
+    text-align: center; 
+}
+
+a:hover, a:active {
+    background-color: #ff9a03;
+    color: #04024f;
+}
+
+
