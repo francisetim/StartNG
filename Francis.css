@@ -82,3 +82,16 @@ th {
 tr:hover {
     background-color: #ff9a03;
 }
+
+a:link, a:visited {
+    color: white;
+    padding: 0.8em 0.8em;
+    text-align: center; 
+}
+
+a:hover, a:active {
+    background-color: #ff9a03;
+    color: #04024f;
+}
+
+
