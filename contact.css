@@ -61,7 +61,7 @@ input[type=email] {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  /* When moving the mouse over the submit button, add a yellow color */
   input[type=submit]:hover {
     background-color: #ff9a03;
     color: #04024f;

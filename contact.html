@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <!--side navigation bar-->
     <div id="nav">
         <ul>
             <li><a href="francis.html">Home</a></li>
@@ -23,33 +24,45 @@
             <li><a href="francis.html">Contact Me</a></li>
         </ul>
     </div>
+    
+    <!--container for contact form details-->
     <div class="container" id="right-column">
         <div class="container-header">
         <h1>Contact Me</h1>
         <h2>I am always ready to serve you!</h2>
         </div>
         <div class="container-form">
-        <form action="action_page.php">
+        <form name="contactForm" action="/action_page.php" method="post">
       
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Your fullname" required>
+            <input type="text" id="fullname" name="fullname" placeholder="Your fullname" autofocus>
+            <br>
+            <p id="nameError"></p>
             <br>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <input type="email" id="email" name="email" placeholder="Your email">
             <br>
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title" placeholder="Your message title" required>
+            <p id="emailError"></p>
+            <br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Your message subject">
+            <br>
+            <p id="subjectError"></p>
             <br>
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Leave a message..." required></textarea>
+            <textarea id="message" name="message" placeholder="Leave a message..."></textarea>
+            <br>
+            <p id="messageError"></p>
             <br>
             <input type="submit" value="Submit">
         </form>
         </div>
     </div>
 
+    <!--footer information-->
     <div id="footer" class="text-center">
         © 2019 FRANCIS BASSEY ETIM. All Rights Reserved.
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
