@@ -32,25 +32,25 @@
         <h2>I am always ready to serve you!</h2>
         </div>
         <div class="container-form">
-        <form name="contactform" action="/submit.php" method="post" onsubmit="return validateForm()">
+        <form name="contactform" action="https://formspree.io/francisetim2@gmail.com" method="post" onsubmit="return validateForm()">
       
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Your full name" autofocus required>
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name" autofocus>
             <br>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email">
+            <input type="email" id="email" name="email" placeholder="Your email" required>
             <br>
 
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
             <br>
 
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Leave a message..."></textarea>
             <br>
             <input type="submit" value="send" name="Submit">
-            
+
         </form>
         </div>
     </div>

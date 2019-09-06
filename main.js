@@ -1,18 +1,18 @@
  
-let fullName = document.getElementById('fullname').value;
-let email = document.getElementById('email').value;
-let message = document.getElementById('message').value;
+let fullName = document.getElementById('fullname');
+let email = document.getElementById('email');
+let message = document.getElementById('message');
 
 const validateName = () => {
-    if (fullName.length <= 4) {
+    if ((fullName.value.length <= 4) && (fullName.value == "")) {
         alert('Please enter your full name');
         fullName.focus();
-        return false;
+        return false();
     } 
 }
 
 const validateEmail = () => {
-    if (email.length >= 5 && email.includes('@') && email.includes('.')) {
+    if (email.value.length >= 5 && email.value.includes('@') && email.value.includes('.')) {
         return true; 
     } else { 
         alert('Please enter your email');
@@ -22,8 +22,8 @@ const validateEmail = () => {
 }
 
 const validateMessage = () => {
-    if (message.length <= 20) {
-        alert('Message too short! Increase message length');
+    if ((message.value.length <= 20) && (message.value == "")){
+        alert('Message too short! minimum character length is 20');
         message.focus();
         return false;
     }
@@ -35,7 +35,6 @@ const validateForm = () => {
     validateMessage();
     return true;
 }
-
 
 
 
