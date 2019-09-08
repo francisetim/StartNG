@@ -4,7 +4,7 @@ let email = document.getElementById('email');
 let message = document.getElementById('message');
 
 const validateName = () => {
-    if ((fullName.value.length <= 4) && (fullName.value == "")) {
+    if ((fullName.value.length <= 4) || (fullName.value == "")) {
         alert('Please enter your full name');
         fullName.focus();
         return false();
